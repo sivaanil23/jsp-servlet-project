@@ -12,9 +12,10 @@ public class Insertrecord {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection con= DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc_stepd?user=root && password=root");
 			Statement st=con.createStatement();
-			st.execute("insert into student values(101,'rahul',20.5)");
-			st.execute("insert into student values(102,'riya',50.5)");
-			st.execute("insert into student values(103,'anil',40.5)");
+//			st.execute("insert into student values(101,'rahul',20.5)");
+//			st.execute("insert into student values(102,'riya',50.5)");
+//			st.execute("insert into student values(103,'anil',40.5)");
+			st.executeUpdate("insert into student values(104,'jannu',60.5)");
 			System.out.println("data inserted");
 		} catch (ClassNotFoundException  | SQLException e) {
 			// TODO Auto-generated catch block
